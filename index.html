@@ -1,1 +1,306 @@
-.
+<!DOCTYPE html>
+<html lang="en-US" data-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+    <title>Weights in the Network — Ukubona Roundtable</title>
+    <meta name="generator" content="Jekyll v3.10.0" />
+    <meta property="og:title" content="Weights in the Network — Ukubona Roundtable" />
+    <meta name="description" content="A correction ledger: a 1980 Berkeley dissertation, Amartya Sen's entitlement approach, and the 2026 Acholi hunger crisis, held in tension." />
+    <meta property="og:description" content="A correction ledger: a 1980 Berkeley dissertation, Amartya Sen's entitlement approach, and the 2026 Acholi hunger crisis, held in tension." />
+    <meta property="og:locale" content="en_US" />
+    <link rel="canonical" href="https://ukubona-llc.github.io/weights-in-the-network/" />
+    <meta property="og:url" content="https://ukubona-llc.github.io/weights-in-the-network/" />
+    <meta property="og:site_name" content="Ukubona LLC — Roundtable Archive" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Weights in the Network — Ukubona Roundtable" />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Article","headline":"Weights in the Network","name":"Weights in the Network — Ukubona Roundtable","url":"https://ukubona-llc.github.io/weights-in-the-network/"}</script>
+    <!-- End Jekyll SEO tag -->
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Ccircle cx='40' cy='40' r='39' fill='%230b0a10'/%3E%3Cline x1='40' y1='40' x2='40' y2='6' stroke='%23f0a848' stroke-width='2'/%3E%3Cline x1='40' y1='40' x2='72.3' y2='29.5' stroke='%239c7ef0' stroke-width='2'/%3E%3Cline x1='40' y1='40' x2='60' y2='67.5' stroke='%234fc7b8' stroke-width='2'/%3E%3Cline x1='40' y1='40' x2='20' y2='67.5' stroke='%23e8637f' stroke-width='2'/%3E%3Cline x1='40' y1='40' x2='7.7' y2='29.5' stroke='%23ede9f5' stroke-width='2'/%3E%3Ccircle cx='40' cy='6' r='4.5' fill='%23f0a848'/%3E%3Ccircle cx='72.3' cy='29.5' r='4.5' fill='%239c7ef0'/%3E%3Ccircle cx='60' cy='67.5' r='4.5' fill='%234fc7b8'/%3E%3Ccircle cx='20' cy='67.5' r='4.5' fill='%23e8637f'/%3E%3Ccircle cx='7.7' cy='29.5' r='4.5' fill='%23ede9f5'/%3E%3Ccircle cx='40' cy='40' r='5' fill='%23ede9f5'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+      :root[data-theme="dark"]{
+        --bg:#0b0a10; --surface:#15131c; --surface-2:#1c1926;
+        --text:#ede9f5; --text-dim:#a39bb0; --text-faint:#6f6779;
+        --border:rgba(237,233,245,0.10); --border-strong:rgba(237,233,245,0.18);
+        --amber:#f0a848; --violet:#9c7ef0; --teal:#4fc7b8; --rose:#e8637f;
+        --shadow: 0 20px 60px rgba(0,0,0,0.45);
+      }
+      :root[data-theme="light"]{
+        --bg:#f7f4ee; --surface:#ffffff; --surface-2:#efeade;
+        --text:#1b1720; --text-dim:#5a5364; --text-faint:#8a8393;
+        --border:rgba(27,23,32,0.10); --border-strong:rgba(27,23,32,0.18);
+        --amber:#b5750f; --violet:#6c46c9; --teal:#0f8f80; --rose:#c23458;
+        --shadow: 0 20px 60px rgba(27,23,32,0.10);
+      }
+      *{box-sizing:border-box;}
+      html{scroll-behavior:smooth;}
+      body{
+        margin:0; background:var(--bg); color:var(--text);
+        font-family:'DM Sans',system-ui,sans-serif; font-size:17px; line-height:1.65;
+        -webkit-font-smoothing:antialiased; transition:background .35s ease,color .35s ease;
+      }
+      ::selection{ background:var(--violet); color:#fff; }
+      .container{ max-width:760px; margin:0 auto; padding:0 24px; }
+
+      /* ---------- header ---------- */
+      header.top{
+        display:flex; align-items:center; justify-content:space-between;
+        padding:28px 0; border-bottom:1px solid var(--border);
+      }
+      .brand{ display:flex; align-items:center; gap:14px; }
+      .brand .name{ font-family:'DM Mono',monospace; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--text-dim); }
+      .brand .name b{ color:var(--text); font-weight:500; }
+
+      .logo{ width:38px; height:38px; flex:none; }
+      .logo svg{ width:100%; height:100%; animation:spin 42s linear infinite; transform-origin:40px 40px; }
+      @media (prefers-reduced-motion: reduce){ .logo svg{ animation:none; } }
+      @keyframes spin{ to{ transform:rotate(360deg); } }
+
+      .toggle{
+        appearance:none; border:1px solid var(--border-strong); background:var(--surface);
+        color:var(--text); font-family:'DM Mono',monospace; font-size:12px; letter-spacing:.08em;
+        padding:9px 14px; border-radius:100px; cursor:pointer; text-transform:uppercase;
+      }
+      .toggle:hover{ border-color:var(--violet); color:var(--violet); }
+      .toggle:focus-visible{ outline:2px solid var(--violet); outline-offset:2px; }
+
+      /* ---------- hero ---------- */
+      .hero{ padding:64px 0 40px; border-bottom:1px solid var(--border); }
+      .eyebrow{
+        font-family:'DM Mono',monospace; font-size:12px; letter-spacing:.16em; text-transform:uppercase;
+        color:var(--amber); margin:0 0 18px;
+      }
+      h1{
+        font-family:'DM Serif Display',serif; font-weight:400; font-style:normal;
+        font-size:clamp(2.4rem,6vw,3.4rem); line-height:1.08; margin:0 0 20px; letter-spacing:-0.01em;
+      }
+      .epigraph{
+        font-family:'DM Serif Display',serif; font-style:italic; font-size:1.15rem;
+        color:var(--text-dim); margin:0 0 22px; border-left:2px solid var(--violet); padding-left:16px;
+      }
+      .meta-line{ font-family:'DM Mono',monospace; font-size:13px; color:var(--text-faint); }
+
+      /* ---------- sections ---------- */
+      section.entry{ padding:56px 0; border-bottom:1px solid var(--border); }
+      section.entry:last-of-type{ border-bottom:none; }
+      .entry .eyebrow{ display:flex; align-items:center; gap:10px; }
+      .entry .eyebrow .dot{ width:7px; height:7px; border-radius:50%; background:var(--accent,var(--amber)); }
+      h2{
+        font-family:'DM Serif Display',serif; font-weight:400; font-size:clamp(1.5rem,3.4vw,1.9rem);
+        margin:0 0 20px; line-height:1.25;
+      }
+      p{ margin:0 0 16px; color:var(--text); }
+      p.dim{ color:var(--text-dim); }
+      .lede{ font-size:1.08rem; color:var(--text-dim); }
+
+      .stat-grid{
+        display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:14px;
+        margin:24px 0 26px;
+      }
+      .stat{ background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:16px; }
+      .stat .n{ font-family:'DM Mono',monospace; font-size:1.5rem; color:var(--accent,var(--amber)); }
+      .stat .l{ font-family:'DM Mono',monospace; font-size:11.5px; color:var(--text-faint); text-transform:uppercase; letter-spacing:.06em; margin-top:4px; }
+
+      blockquote{
+        margin:22px 0; padding:18px 20px; background:var(--surface); border-left:3px solid var(--teal);
+        border-radius:0 10px 10px 0; font-size:.98rem; color:var(--text-dim);
+      }
+      blockquote cite{ display:block; margin-top:8px; font-family:'DM Mono',monospace; font-size:11.5px; font-style:normal; color:var(--text-faint); }
+
+      /* ---------- ledger table ---------- */
+      .ledger{ display:flex; flex-direction:column; gap:14px; margin-top:22px; }
+      .ledger-row{
+        background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:18px 20px;
+        display:grid; grid-template-columns:1fr; gap:10px;
+      }
+      .ledger-row .idx{ font-family:'DM Mono',monospace; font-size:11px; color:var(--text-faint); letter-spacing:.08em; }
+      .ledger-row .claim{ font-size:.96rem; }
+      .ledger-row .claim b{ color:var(--rose); font-weight:500; }
+      .ledger-row .correction{ font-size:.96rem; color:var(--text-dim); }
+      .ledger-row .correction b{ color:var(--teal); font-weight:500; }
+      .ledger-row .foot{ display:flex; align-items:center; justify-content:space-between; margin-top:4px; }
+      .src{ font-family:'DM Mono',monospace; font-size:11px; color:var(--text-faint); }
+      .status{
+        font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+        padding:4px 10px; border-radius:100px; border:1px solid;
+      }
+      .status.resolved{ color:var(--teal); border-color:var(--teal); }
+      .status.pending{ color:var(--rose); border-color:var(--rose); background:rgba(232,99,127,0.08); }
+
+      footer{ padding:48px 0 80px; }
+      footer .sources{ font-family:'DM Mono',monospace; font-size:12px; color:var(--text-faint); line-height:2; }
+      footer .sources a{ color:var(--text-dim); text-decoration:none; border-bottom:1px dotted var(--border-strong); }
+      footer .sources a:hover{ color:var(--teal); border-color:var(--teal); }
+      footer .colophon{ margin-top:30px; padding-top:24px; border-top:1px solid var(--border); font-family:'DM Mono',monospace; font-size:12px; color:var(--text-faint); }
+      footer .colophon b{ color:var(--text-dim); }
+
+      a{ color:inherit; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <header class="top">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">
+            <svg viewBox="0 0 80 80">
+              <line x1="40" y1="40" x2="40" y2="6" stroke="var(--amber)" stroke-width="2"/>
+              <line x1="40" y1="40" x2="72.3" y2="29.5" stroke="var(--violet)" stroke-width="2"/>
+              <line x1="40" y1="40" x2="60" y2="67.5" stroke="var(--teal)" stroke-width="2"/>
+              <line x1="40" y1="40" x2="20" y2="67.5" stroke="var(--rose)" stroke-width="2"/>
+              <line x1="40" y1="40" x2="7.7" y2="29.5" stroke="var(--text)" stroke-width="2"/>
+              <circle cx="40" cy="6" r="4.5" fill="var(--amber)"/>
+              <circle cx="72.3" cy="29.5" r="4.5" fill="var(--violet)"/>
+              <circle cx="60" cy="67.5" r="4.5" fill="var(--teal)"/>
+              <circle cx="20" cy="67.5" r="4.5" fill="var(--rose)"/>
+              <circle cx="7.7" cy="29.5" r="4.5" fill="var(--text)"/>
+              <circle cx="40" cy="40" r="5" fill="var(--text)"/>
+            </svg>
+          </div>
+          <div class="name">Ukubona <b>LLC</b> — Roundtable Archive</div>
+        </div>
+        <button class="toggle" id="themeToggle" aria-pressed="false">Light mode</button>
+      </header>
+
+      <section class="hero">
+        <p class="eyebrow">Filed 19 July 2026 · Kampala thread</p>
+        <h1>Weights in the Network</h1>
+        <p class="epigraph">Okubala si Kulaba — counting is not seeing.</p>
+        <p class="meta-line">A 1980 Berkeley dissertation · Amartya Sen · a UBC broadcast from Lamwo. Held open, pending a hard copy.</p>
+      </section>
+
+      <section class="entry" style="--accent:var(--amber)">
+        <p class="eyebrow"><span class="dot"></span>I — The Ledger Entry</p>
+        <h2>A dissertation, a Nobel, a district</h2>
+        <p class="lede">In May 1980, a doctoral thesis titled <em>Hunger and Famine in Rural East Africa</em> was defended at UC Berkeley. It studied Kenya — not Uganda, though its author was Ugandan. A year later, Amartya Sen published <em>Poverty and Famines: An Essay on Entitlement and Deprivation</em>. In 1998 he received the Nobel Memorial Prize in Economic Sciences. The dissertation received no comparable recognition.</p>
+        <p>The question opened for the roundtable was not whether that gap is fair, but what it's made of: is recognition a merit ranking, or a weighted network — social and institutional structure determining which insights propagate and which stay local? The question arrived beside three photographs of a UBC News Tonight chyron: <em>Acholi Hunger Crisis — Drought kills ten, disrupts education in Agago District.</em> Gemini answered first. This entry is the second voice, and a set of corrections.</p>
+      </section>
+
+      <section class="entry" style="--accent:var(--teal)">
+        <p class="eyebrow"><span class="dot"></span>II — The Crisis, Verified</p>
+        <h2>What the chyron didn't have time to say</h2>
+        <p>The broadcast undersold its own story. This is not local news — Parliament passed a motion on 16 July pushing emergency relief and climate-resilience investment across eight sub-regions: West Nile, Acholi, Lango, Karamoja, Teso, Bukedi, Bunyoro, Elgon. Museveni has ordered the army into food distribution alongside the Office of the Prime Minister, drawing on a $38M disaster-financing facility.</p>
+        <div class="stat-grid">
+          <div class="stat"><div class="n">351</div><div class="l">Malnutrition cases, Agago, Jan–Jul</div></div>
+          <div class="stat"><div class="n">69,400+</div><div class="l">Households, crops lost, Agago</div></div>
+          <div class="stat"><div class="n">12 → 23</div><div class="l">Suspected deaths, Agago / Karamoja</div></div>
+          <div class="stat"><div class="n">1986–2006</div><div class="l">LRA war, Acholi sub-region</div></div>
+        </div>
+        <p class="dim">District officials describe a sequence: households living off the mango season, then raw papaya, then wild foods, once the first planting season failed outright.</p>
+        <p>"Arid climate zone" is the explanation on offer elsewhere, and it's true but incomplete. Agago and Lamwo are Acholi, and Acholi spent 1986 to 2006 under a different catastrophe — up to two million people, close to the entire sub-region, pushed into displacement camps during the war against the Lord's Resistance Army, farmland left fallow for two decades. The region has had less than twenty years to rebuild agricultural continuity it took a generation to lose. A drought does different damage in a place that's had that happen to it recently. This is also not the first such episode this decade: a comparable crisis in 2022 pushed roughly 40% of Karamoja into critical need.</p>
+      </section>
+
+      <section class="entry" style="--accent:var(--violet)">
+        <p class="eyebrow"><span class="dot"></span>III — The Network</p>
+        <h2>Sen had a four-year head start</h2>
+        <p>Not simultaneous discovery. Sen laid out the entitlement approach in 1976, in the <em>Economic and Political Weekly</em>, then again in 1977 in the <em>Cambridge Journal of Economics</em> — three to four years before the Berkeley defense. He was already a professor at the London School of Economics when he wrote it; the 1977 paper's acknowledgments read like a directory of the field's senior figures, Pranab Bardhan and Joan Robinson among them. The 1981 book's case studies were Bengal, Ethiopia, the Sahel, and Bangladesh — not East Africa specifically. By 1980, Sen had a running program and an institutional seat at the center of the discipline. The dissertation arrived into a field that had already been claimed.</p>
+        <blockquote>
+          In cases of independent or near-simultaneous discovery, credit does not split — it accrues to whichever researcher already has standing, while the other's version of the same insight is quietly absorbed rather than separately credited.
+          <cite>— the "Matthew effect," Robert K. Merton, Science, 1968</cite>
+        </blockquote>
+        <p class="dim">This is not a metaphor being reached for. It's a documented mechanism in the sociology of science, re-tested quantitatively at the level of researchers, institutions, and countries. The network-weights framing isn't just an apt image for what happened here — as far as the literature goes, it's the correct model.</p>
+      </section>
+
+      <section class="entry" style="--accent:var(--rose)">
+        <p class="eyebrow"><span class="dot"></span>IV — The Unfound Corpus</p>
+        <h2>Findable in four seconds, and not at all</h2>
+        <p>A search for the dissertation — title, advisor, any citation trail — returned nothing indexed. That doesn't prove absence; a great deal of pre-digital scholarship sits outside what web search reaches, and this thread is written knowing a hard copy exists and is coming. But the asymmetry is worth naming plainly rather than arguing for: Sen's 1976 and 1977 papers are reachable from anywhere on earth in a few seconds. The dissertation, right now, is reachable from nowhere but a shelf in Kampala. That gap <em>is</em> the network-weights question, made visible instead of theorized.</p>
+      </section>
+
+      <section class="entry" style="--accent:var(--amber)">
+        <p class="eyebrow"><span class="dot"></span>V — Correction Ledger</p>
+        <h2>Five entries, four resolved</h2>
+        <div class="ledger">
+
+          <div class="ledger-row">
+            <div class="idx">001</div>
+            <div class="claim"><b>Claim (Gemini):</b> Sen's book appeared "just a year after" the dissertation — implying near-parallel discovery.</div>
+            <div class="correction"><b>Correction:</b> Sen's entitlement approach dates to 1976–77, three to four years prior; he was already an LSE professor with an established peer network.</div>
+            <div class="foot"><span class="src">src: EPW 1976 · Cambridge J. Econ 1977</span><span class="status resolved">Resolved</span></div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="idx">002</div>
+            <div class="claim"><b>Claim:</b> Northern Uganda's hunger vulnerability is explained by rain-fed agriculture in an arid zone.</div>
+            <div class="correction"><b>Correction:</b> Compounded by the 1986–2006 LRA war — up to 1.8–2M displaced, ~90% of the Acholi sub-region, farmland fallow for two decades.</div>
+            <div class="foot"><span class="src">src: FMR · Minority Rights Group · UNHCR</span><span class="status resolved">Resolved</span></div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="idx">003</div>
+            <div class="claim"><b>Open question:</b> Why did a Ugandan doctoral candidate's fieldwork focus on Kenya?</div>
+            <div class="correction"><b>Finding:</b> Fieldwork for a May 1980 defense falls in the mid-to-late 1970s — the height of Idi Amin's regime (1971–79), openly hostile to researchers; Kenya was the comparatively studiable neighbor.</div>
+            <div class="foot"><span class="src">src: Derek Peterson, "Rethinking the State in Amin's Uganda"</span><span class="status resolved">Resolved</span></div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="idx">004</div>
+            <div class="claim"><b>Implicit assumption:</b> The Nobel was awarded for the 1981 famine book specifically.</div>
+            <div class="correction"><b>Correction:</b> The citation was for welfare economics and social choice theory as a decades-long body of work, 1970 onward — not one book. A dissertation and a Nobel-recognized research program are different categories of object.</div>
+            <div class="foot"><span class="src">src: Nobel Prize committee, 1998 press release</span><span class="status resolved">Resolved</span></div>
+          </div>
+
+          <div class="ledger-row">
+            <div class="idx">005</div>
+            <div class="claim"><b>Central question:</b> Does the dissertation's argument actually overlap with Sen's entitlement approach?</div>
+            <div class="correction"><b>Status:</b> Cannot be assessed without the primary text. Hard copy in hand; awaiting digitization or transcription for direct comparison against the 1977 and 1981 papers.</div>
+            <div class="foot"><span class="src">src: —</span><span class="status pending">Elicitation pending</span></div>
+          </div>
+
+        </div>
+      </section>
+
+      <footer>
+        <p class="meta-line" style="margin-bottom:14px;">Sources consulted</p>
+        <div class="sources">
+          Parliament of Uganda, motion on Northern Uganda drought, 16 Jul 2026 (Watchdog Uganda / APO Group)<br>
+          New Vision Uganda — Agago malnutrition and crop-loss reporting, Jul 2026<br>
+          The Black Examiner — Karamoja food emergency declaration<br>
+          Sen, A.K. — "Famines as Failures of Exchange Entitlements," EPW, 1976<br>
+          Sen, A.K. — "Starvation and Exchange Entitlements," Cambridge J. Econ, 1977<br>
+          Sveriges Riksbank Prize Committee — 1998 press release, nobelprize.org<br>
+          Merton, R.K. — "The Matthew Effect in Science," Science, 1968<br>
+          Peterson, D.R. — "Rethinking the State in Idi Amin's Uganda"<br>
+          Minority Rights Group, UNHCR, Forced Migration Review — LRA displacement figures
+        </div>
+        <div class="colophon">
+          <b>Voices logged:</b> Gemini (Google) → Claude (Anthropic). <b>Pending:</b> the dissertation, and the Ukubona synthesis that follows it.
+        </div>
+      </footer>
+
+    </div>
+
+    <script>
+      (function(){
+        var root = document.documentElement;
+        var btn = document.getElementById('themeToggle');
+        var stored = null;
+        try { stored = localStorage.getItem('ukubona-theme'); } catch(e) {}
+        if(stored === 'light'){ root.setAttribute('data-theme','light'); }
+        function sync(){
+          var isLight = root.getAttribute('data-theme') === 'light';
+          btn.textContent = isLight ? 'Dark mode' : 'Light mode';
+          btn.setAttribute('aria-pressed', String(isLight));
+        }
+        sync();
+        btn.addEventListener('click', function(){
+          var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+          root.setAttribute('data-theme', next);
+          try { localStorage.setItem('ukubona-theme', next); } catch(e) {}
+          sync();
+        });
+      })();
+    </script>
+  </body>
+</html>
